@@ -9,6 +9,7 @@
 @property (strong, nonatomic) RUICalibrateGestureHandler *calibrateHandler;
 @property (strong, nonatomic) AFDXDetector *detector;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *forceView;
 
 @end
 
@@ -30,6 +31,7 @@
 
 - (void)detector:(AFDXDetector *)detector didStopDetectingFace:(AFDXFace *)face;
 {
+    [self.forceView setImage:nil];
     [self.robot sendCommand:[RKRollCommand commandWithStopAtHeading:0]];
     [self.robot setLEDWithRed:1.0 green:0.0 blue:0.0];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -53,15 +55,21 @@
         AFDXFace *face = [faces objectForKey:firstFaceKey];
 
         if (face.browFurrowScore > 20) {
+            // negative
             [self.robot sendCommand:[RKRollCommand commandWithHeading:180 andVelocity:face.browFurrowScore / 100.0]];
+            [self.forceView setImage:[UIImage imageNamed:@"darkside.png"]];
         }
         else if (face.browRaiseScore > 20)
         {
+            // Positive
             [self.robot sendCommand:[RKRollCommand commandWithHeading:0 andVelocity:face.browRaiseScore / 100.0]];
+            [self.forceView setImage:[UIImage imageNamed:@"lightside.png"]];
         }
         else
         {
+            // Neutral
             [self.robot sendCommand:[RKRollCommand commandWithStopAtHeading:0]];
+            [self.forceView setImage:nil];
         }
     }
 }
