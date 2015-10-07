@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D05A7A7D6CA4CE3B13598A9934705546DF6E5E9" : 0,
+    "5BE677357093A5A5683A95D324CBCE1546CDC20A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CBF8FD98-3EEA-4E61-ACF8-BEBDC19C32BF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D05A7A7D6CA4CE3B13598A9934705546DF6E5E9" : "..",
+    "5BE677357093A5A5683A95D324CBCE1546CDC20A" : "BB8Buddy\/Sphero-iOS-SDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BB8Buddy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BB8Buddy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/orbotix\/Sphero-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BE677357093A5A5683A95D324CBCE1546CDC20A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:Affectiva\/affdex-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D05A7A7D6CA4CE3B13598A9934705546DF6E5E9"
+    }
+  ]
+}
