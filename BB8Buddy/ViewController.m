@@ -10,6 +10,8 @@
 @property (strong, nonatomic) AFDXDetector *detector;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UIImageView *forceView;
+@property (assign) BOOL drawFacePoints;
+@property (strong, nonatomic) NSArray *facePoints;
 
 @end
 
@@ -24,6 +26,7 @@
             [self.robot setLEDWithRed:0.0 green:1.0 blue:0.0];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self.robot setLEDWithRed:0.0 green:0.0 blue:0.0];
+                self.drawFacePoints = TRUE;
             });
         });
     });
@@ -40,6 +43,7 @@
             [self.robot setLEDWithRed:1.0 green:0.0 blue:0.0];
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self.robot setLEDWithRed:0.0 green:0.0 blue:0.0];
+                self.drawFacePoints = FALSE;
             });
         });
     });
@@ -49,10 +53,21 @@
 {
     if (nil == faces) {
         // put up frame in view
-        [self.imageView setImage:image];
+        UIImage *i = image;
+        
+        if (self.drawFacePoints) {
+            i = [self.detector imageByDrawingPoints:self.facePoints
+                                               andRectangles:nil
+                                                  withRadius:2.0
+                                             usingPointColor:[UIColor whiteColor]
+                                         usingRectangleColor:[UIColor greenColor]
+                                                     onImage:image];
+        }
+        [self.imageView setImage:i];
     } else if ([faces count] > 0) {
         NSString *firstFaceKey = [[faces allKeys] objectAtIndex:0];
         AFDXFace *face = [faces objectForKey:firstFaceKey];
+        self.facePoints = face.facePoints;
 
         if (face.browFurrowScore > 20) {
             // negative
