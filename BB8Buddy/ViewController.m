@@ -15,6 +15,11 @@
 
 @end
 
+#define YOUR_AFFDEX_LICENSE_STRING_GOES_HERE @"x"
+#ifndef YOUR_AFFDEX_LICENSE_STRING_GOES_HERE
+#error Please set the macro YOUR_AFFDEX_LICENSE_STRING_GOES_HERE to the contents of your Affectiva SDK license file.
+#endif
+
 @implementation ViewController
 
 - (void)detector:(AFDXDetector *)detector didStartDetectingFace:(AFDXFace *)face;
@@ -56,11 +61,13 @@
         UIImage *i = image;
         
         if (self.drawFacePoints) {
-            i = [self.detector imageByDrawingPoints:self.facePoints
+            i = [AFDXDetector imageByDrawingPoints:self.facePoints
                                                andRectangles:nil
+                                          andImages:nil
                                                   withRadius:2.0
                                              usingPointColor:[UIColor whiteColor]
                                          usingRectangleColor:[UIColor greenColor]
+                                    usingImageRects:nil
                                                      onImage:image];
         }
         [self.imageView setImage:i];
@@ -69,15 +76,15 @@
         AFDXFace *face = [faces objectForKey:firstFaceKey];
         self.facePoints = face.facePoints;
 
-        if (face.browFurrowScore > 20) {
+        if (face.expressions.browFurrow > 20) {
             // negative
-            [self.robot sendCommand:[RKRollCommand commandWithHeading:180 andVelocity:face.browFurrowScore / 100.0]];
+            [self.robot sendCommand:[RKRollCommand commandWithHeading:180 andVelocity:face.expressions.browFurrow / 100.0]];
             [self.forceView setImage:[UIImage imageNamed:@"darkside.png"]];
         }
-        else if (face.browRaiseScore > 20)
+        else if (face.expressions.browRaise > 20)
         {
             // Positive
-            [self.robot sendCommand:[RKRollCommand commandWithHeading:0 andVelocity:face.browRaiseScore / 100.0]];
+            [self.robot sendCommand:[RKRollCommand commandWithHeading:0 andVelocity:face.expressions.browRaise / 100.0]];
             [self.forceView setImage:[UIImage imageNamed:@"lightside.png"]];
         }
         else
@@ -108,7 +115,7 @@
     [[RKRobotDiscoveryAgent sharedAgent] addNotificationObserver:self selector:@selector(handleRobotStateChangeNotification:)];
     
     self.detector = [[AFDXDetector alloc] initWithDelegate:self usingCamera:AFDX_CAMERA_FRONT maximumFaces:1];
-    self.detector.licensePath = [[NSBundle mainBundle] pathForResource:@"sdk" ofType:@"license"];
+    self.detector.licenseString = YOUR_AFFDEX_LICENSE_STRING_GOES_HERE;
     self.detector.browRaise = YES;
     self.detector.browFurrow = YES;
     [self.detector start];

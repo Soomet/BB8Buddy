@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6828AA541BC4699E00631E5D /* sdk.license in Resources */ = {isa = PBXBuildFile; fileRef = 6828AA531BC4699E00631E5D /* sdk.license */; };
-		682B764F1BC47F73009D36B8 /* Affdex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B764E1BC47F73009D36B8 /* Affdex.framework */; };
-		682B76501BC47F73009D36B8 /* Affdex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 682B764E1BC47F73009D36B8 /* Affdex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		680078CD1C8B225B009D9AD4 /* Affdex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680078CC1C8B225B009D9AD4 /* Affdex.framework */; };
 		682B76651BC4840A009D36B8 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B765F1BC483AF009D36B8 /* RobotKit.framework */; };
 		682B76661BC4840A009D36B8 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B76601BC483AF009D36B8 /* RobotUIKit.framework */; };
 		682B76681BC53A68009D36B8 /* darkside.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B76671BC53A68009D36B8 /* darkside.png */; };
@@ -29,7 +27,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				682B76501BC47F73009D36B8 /* Affdex.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,8 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6828AA531BC4699E00631E5D /* sdk.license */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sdk.license; sourceTree = "<group>"; };
-		682B764E1BC47F73009D36B8 /* Affdex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Affdex.framework; sourceTree = "<group>"; };
+		680078CC1C8B225B009D9AD4 /* Affdex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Affdex.framework; sourceTree = "<group>"; };
 		682B765F1BC483AF009D36B8 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotKit.framework"; sourceTree = "<group>"; };
 		682B76601BC483AF009D36B8 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotUIKit.framework"; sourceTree = "<group>"; };
 		682B76671BC53A68009D36B8 /* darkside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkside.png; sourceTree = "<group>"; };
@@ -60,8 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682B764F1BC47F73009D36B8 /* Affdex.framework in Frameworks */,
 				682B76651BC4840A009D36B8 /* RobotKit.framework in Frameworks */,
+				680078CD1C8B225B009D9AD4 /* Affdex.framework in Frameworks */,
 				682B76661BC4840A009D36B8 /* RobotUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,10 +70,9 @@
 			children = (
 				682B76691BC53A6F009D36B8 /* lightside.png */,
 				682B76671BC53A68009D36B8 /* darkside.png */,
+				680078CC1C8B225B009D9AD4 /* Affdex.framework */,
 				682B765F1BC483AF009D36B8 /* RobotKit.framework */,
 				682B76601BC483AF009D36B8 /* RobotUIKit.framework */,
-				682B764E1BC47F73009D36B8 /* Affdex.framework */,
-				6828AA531BC4699E00631E5D /* sdk.license */,
 				6841C9F71BC45561001F21B7 /* BB8Buddy */,
 				6841C9F61BC45561001F21B7 /* Products */,
 			);
@@ -185,7 +180,6 @@
 				6841CA051BC45561001F21B7 /* Assets.xcassets in Resources */,
 				682B76681BC53A68009D36B8 /* darkside.png in Resources */,
 				6841CA031BC45561001F21B7 /* Main.storyboard in Resources */,
-				6828AA541BC4699E00631E5D /* sdk.license in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
