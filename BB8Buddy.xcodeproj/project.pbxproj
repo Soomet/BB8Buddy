@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		680078CD1C8B225B009D9AD4 /* Affdex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680078CC1C8B225B009D9AD4 /* Affdex.framework */; };
-		682B76651BC4840A009D36B8 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B765F1BC483AF009D36B8 /* RobotKit.framework */; };
-		682B76661BC4840A009D36B8 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682B76601BC483AF009D36B8 /* RobotUIKit.framework */; };
 		682B76681BC53A68009D36B8 /* darkside.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B76671BC53A68009D36B8 /* darkside.png */; };
 		682B766A1BC53A6F009D36B8 /* lightside.png in Resources */ = {isa = PBXBuildFile; fileRef = 682B76691BC53A6F009D36B8 /* lightside.png */; };
 		6841C9FA1BC45561001F21B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6841C9F91BC45561001F21B7 /* main.m */; };
@@ -18,6 +15,9 @@
 		6841CA031BC45561001F21B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6841CA011BC45561001F21B7 /* Main.storyboard */; };
 		6841CA051BC45561001F21B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6841CA041BC45561001F21B7 /* Assets.xcassets */; };
 		6841CA081BC45561001F21B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6841CA061BC45561001F21B7 /* LaunchScreen.storyboard */; };
+		68ADB7231DC8B3A50098DEE2 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */; };
+		68ADB7251DC8B3AD0098DEE2 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */; };
+		7C573C00B931A58FC5610055 /* Pods_BB8Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,9 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		680078CC1C8B225B009D9AD4 /* Affdex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Affdex.framework; sourceTree = "<group>"; };
-		682B765F1BC483AF009D36B8 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotKit.framework"; sourceTree = "<group>"; };
-		682B76601BC483AF009D36B8 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotUIKit.framework"; sourceTree = "<group>"; };
+		4DAD40FEFF749D57CAC6B66D /* Pods-BB8Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB8Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy.release.xcconfig"; sourceTree = "<group>"; };
 		682B76671BC53A68009D36B8 /* darkside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkside.png; sourceTree = "<group>"; };
 		682B76691BC53A6F009D36B8 /* lightside.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightside.png; sourceTree = "<group>"; };
 		6841C9F51BC45561001F21B7 /* BB8Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BB8Buddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +47,10 @@
 		6841CA041BC45561001F21B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6841CA071BC45561001F21B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6841CA091BC45561001F21B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotUIKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotUIKit.framework"; sourceTree = "<group>"; };
+		68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotKit.framework"; sourceTree = "<group>"; };
+		938595D4DC9EE5B7027AD74B /* Pods-BB8Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB8Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BB8Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,25 +58,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682B76651BC4840A009D36B8 /* RobotKit.framework in Frameworks */,
-				680078CD1C8B225B009D9AD4 /* Affdex.framework in Frameworks */,
-				682B76661BC4840A009D36B8 /* RobotUIKit.framework in Frameworks */,
+				68ADB7231DC8B3A50098DEE2 /* RobotUIKit.framework in Frameworks */,
+				7C573C00B931A58FC5610055 /* Pods_BB8Buddy.framework in Frameworks */,
+				68ADB7251DC8B3AD0098DEE2 /* RobotKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65933D26D3C0CB4AB69F098D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6841C9EC1BC45561001F21B7 = {
 			isa = PBXGroup;
 			children = (
+				68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */,
+				68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */,
 				682B76691BC53A6F009D36B8 /* lightside.png */,
 				682B76671BC53A68009D36B8 /* darkside.png */,
-				680078CC1C8B225B009D9AD4 /* Affdex.framework */,
-				682B765F1BC483AF009D36B8 /* RobotKit.framework */,
-				682B76601BC483AF009D36B8 /* RobotUIKit.framework */,
 				6841C9F71BC45561001F21B7 /* BB8Buddy */,
 				6841C9F61BC45561001F21B7 /* Products */,
+				AE289D4A146151763949423C /* Pods */,
+				65933D26D3C0CB4AB69F098D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +121,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE289D4A146151763949423C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				938595D4DC9EE5B7027AD74B /* Pods-BB8Buddy.debug.xcconfig */,
+				4DAD40FEFF749D57CAC6B66D /* Pods-BB8Buddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,11 +137,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6841CA0C1BC45561001F21B7 /* Build configuration list for PBXNativeTarget "BB8Buddy" */;
 			buildPhases = (
+				B357BCE3AF8ABE77B07360C2 /* [CP] Check Pods Manifest.lock */,
 				6841C9F11BC45561001F21B7 /* Sources */,
 				6841C9F21BC45561001F21B7 /* Frameworks */,
 				6841C9F31BC45561001F21B7 /* Resources */,
 				6828AA571BC4717500631E5D /* ShellScript */,
 				682B764D1BC47F57009D36B8 /* Embed Frameworks */,
+				D3016CD7236E91D723A499C8 /* [CP] Embed Pods Frameworks */,
+				4F215AD157EBE031F5E87588 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,12 +161,13 @@
 		6841C9ED1BC45561001F21B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = affectiva;
 				TargetAttributes = {
 					6841C9F41BC45561001F21B7 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = AG6NAZTNM9;
+						DevelopmentTeam = CU686R2DQF;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -186,6 +210,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4F215AD157EBE031F5E87588 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6828AA571BC4717500631E5D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +237,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -x\nbuildPlist=$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Info.plist\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nCFBundleVersionINCR=$((CFBundleVersion + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\nbuildPlist=${INFOPLIST_FILE}\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\nif [ \"$PLATFORM_NAME\" != \"iphonesimulator\" ]; then\n    lipo -remove x86_64 \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" -output \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" || true\n    lipo -remove i386 \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" -output \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" || true\nfi\n\n";
+		};
+		B357BCE3AF8ABE77B07360C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3016CD7236E91D723A499C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -247,8 +316,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -291,8 +362,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -318,10 +391,12 @@
 		};
 		6841CA0D1BC45561001F21B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938595D4DC9EE5B7027AD74B /* Pods-BB8Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Timothy Peacock (9L6874HDQS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Timothy Peacock (9L6874HDQS)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Affectiva, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CU686R2DQF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,12 +407,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.affectiva.BB8Buddy;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8Buddy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "54fbc946-b4cc-487a-b78e-dc29e81d6c65";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -345,10 +422,12 @@
 		};
 		6841CA0E1BC45561001F21B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DAD40FEFF749D57CAC6B66D /* Pods-BB8Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Affectiva, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Affectiva, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CU686R2DQF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -359,12 +438,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.affectiva.BB8Buddy;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8Buddy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8a9a4d50-bf4b-4bda-9e0a-1a6bf164af14";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

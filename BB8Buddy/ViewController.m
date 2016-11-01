@@ -15,11 +15,6 @@
 
 @end
 
-#define YOUR_AFFDEX_LICENSE_STRING_GOES_HERE @"x"
-#ifndef YOUR_AFFDEX_LICENSE_STRING_GOES_HERE
-#error Please set the macro YOUR_AFFDEX_LICENSE_STRING_GOES_HERE to the contents of your Affectiva SDK license file.
-#endif
-
 @implementation ViewController
 
 - (void)detector:(AFDXDetector *)detector didStartDetectingFace:(AFDXFace *)face;
@@ -115,7 +110,6 @@
     [[RKRobotDiscoveryAgent sharedAgent] addNotificationObserver:self selector:@selector(handleRobotStateChangeNotification:)];
     
     self.detector = [[AFDXDetector alloc] initWithDelegate:self usingCamera:AFDX_CAMERA_FRONT maximumFaces:1];
-    self.detector.licenseString = YOUR_AFFDEX_LICENSE_STRING_GOES_HERE;
     self.detector.browRaise = YES;
     self.detector.browFurrow = YES;
     [self.detector start];
