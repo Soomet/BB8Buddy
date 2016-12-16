@@ -18,6 +18,7 @@
 		68ADB7231DC8B3A50098DEE2 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */; };
 		68ADB7251DC8B3AD0098DEE2 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */; };
 		7C573C00B931A58FC5610055 /* Pods_BB8Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */; };
+		D9850DDA1E0468B900AF3491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9850DD91E0468B900AF3491 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotKit.framework"; sourceTree = "<group>"; };
 		938595D4DC9EE5B7027AD74B /* Pods-BB8Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB8Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BB8Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9850DD91E0468B900AF3491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BB8Buddy/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		6841C9EC1BC45561001F21B7 = {
 			isa = PBXGroup;
 			children = (
+				D9850DD91E0468B900AF3491 /* Images.xcassets */,
 				68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */,
 				68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */,
 				682B76691BC53A6F009D36B8 /* lightside.png */,
@@ -166,8 +169,8 @@
 				TargetAttributes = {
 					6841C9F41BC45561001F21B7 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = CU686R2DQF;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = AG6NAZTNM9;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -202,6 +205,7 @@
 				6841CA081BC45561001F21B7 /* LaunchScreen.storyboard in Resources */,
 				682B766A1BC53A6F009D36B8 /* lightside.png in Resources */,
 				6841CA051BC45561001F21B7 /* Assets.xcassets in Resources */,
+				D9850DDA1E0468B900AF3491 /* Images.xcassets in Resources */,
 				682B76681BC53A68009D36B8 /* darkside.png in Resources */,
 				6841CA031BC45561001F21B7 /* Main.storyboard in Resources */,
 			);
@@ -236,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -x\nbuildPlist=$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Info.plist\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nCFBundleVersionINCR=$((CFBundleVersion + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\nbuildPlist=${INFOPLIST_FILE}\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\nif [ \"$PLATFORM_NAME\" != \"iphonesimulator\" ]; then\n    lipo -remove x86_64 \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" -output \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" || true\n    lipo -remove i386 \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" -output \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Affdex.framework/Affdex\" || true\nfi\n\n";
+			shellScript = "set -x\nbuildPlist=$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Info.plist\nCFBundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nCFBundleVersionINCR=$((CFBundleVersion + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\nbuildPlist=${INFOPLIST_FILE}\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $CFBundleVersionINCR\" \"$buildPlist\"\n";
 		};
 		B357BCE3AF8ABE77B07360C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -396,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Affectiva, Inc.";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CU686R2DQF;
+				DEVELOPMENT_TEAM = AG6NAZTNM9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,10 +415,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8Buddy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "698906bd-cc0c-4cc6-bdf4-ddd8be18899d";
+				PROVISIONING_PROFILE_SPECIFIER = "Affectiva Dev Profile";
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,8 +430,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Affectiva, Inc.";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CU686R2DQF;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = AG6NAZTNM9;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,10 +446,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8Buddy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.affectiva.BB8-Buddy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "96a3776c-8ff7-4d7b-a838-0fd5017c2053";
+				PROVISIONING_PROFILE_SPECIFIER = BB8Buddy;
 				STRIP_BITCODE_FROM_COPIED_FILES = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
