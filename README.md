@@ -18,7 +18,6 @@ This is an Xcode 7 project.
 
 In order to use this project, you will need to:
 - Obtain the Sphero SDK for iOS at http://developer.gosphero.com and place the contents at the root level of the project folder.
-- Obtain the Affectiva iOS SDK (visit http://www.affectiva.com/solutions/apis-sdks/)
 - Have a valid CocoaPods installation on your machine
 - Install the Affdex SDK on your machine using the Podfile:
 ```
