@@ -5,3 +5,13 @@ use_frameworks!
 target 'BB8Buddy' do
     pod 'AffdexSDK-iOS', :podspec => '/Users/stevephillips/Affectiva/LocalPods/'
 end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if (target.name == "AWSCore") || (target.name == 'AWSKinesis')
+            target.build_configurations.each do |config|
+                config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
+            end
+        end
+    end
+end
