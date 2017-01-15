@@ -3,99 +3,103 @@
     {
       "idiom" : "iphone",
       "size" : "20x20",
+      "filename" : "BB8Buddy_Logo_40x40.png",
       "scale" : "2x"
     },
     {
       "idiom" : "iphone",
       "size" : "20x20",
+      "filename" : "BB8Buddy_Logo_60x60.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_58x58-1.png",
+      "filename" : "BB8Buddy_Logo_58x58.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_87x87.png",
+      "filename" : "BB8Buddy_Logo_87x87.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_80x80.png",
+      "filename" : "BB8Buddy_Logo_80x80.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_120x120.png",
+      "filename" : "BB8Buddy_Logo_120x120.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_120x120.png",
+      "filename" : "BB8Buddy_Logo_120x120.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "AffdexMe_Logo_180x180.png",
+      "filename" : "BB8Buddy_Logo_180x180.png",
       "scale" : "3x"
     },
     {
       "idiom" : "ipad",
       "size" : "20x20",
+      "filename" : "BB8Buddy_Logo_20x20.png",
       "scale" : "1x"
     },
     {
       "idiom" : "ipad",
       "size" : "20x20",
+      "filename" : "BB8Buddy_Logo_40x40.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_29x29.png",
+      "filename" : "BB8Buddy_Logo_29x29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_58x58.png",
+      "filename" : "BB8Buddy_Logo_58x58.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_40x40.png",
+      "filename" : "BB8Buddy_Logo_40x40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_80x80.png",
+      "filename" : "BB8Buddy_Logo_80x80.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_76x76.png",
+      "filename" : "BB8Buddy_Logo_76x76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_152x152.png",
+      "filename" : "BB8Buddy_Logo_152x152.png",
       "scale" : "2x"
     },
     {
       "size" : "83.5x83.5",
       "idiom" : "ipad",
-      "filename" : "AffdexMe_Logo_167x167.png",
+      "filename" : "BB8Buddy_Logo_167x167.png",
       "scale" : "2x"
     }
   ],
