@@ -3,15 +3,5 @@ source 'https://github.com/Affectiva/cocoapods-specs.git'
 use_frameworks!
 
 target 'BB8Buddy' do
-    pod 'AffdexSDK-iOS', '3.2.0-596'
-end
-
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        if (target.name == "AWSCore") || (target.name == 'AWSKinesis')
-            target.build_configurations.each do |config|
-                config.build_settings['BITCODE_GENERATION_MODE'] = 'bitcode'
-            end
-        end
-    end
+    pod 'AffdexSDK-iOS', '3.2.0-603'
 end

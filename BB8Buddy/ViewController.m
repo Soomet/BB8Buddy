@@ -109,7 +109,7 @@
     // hook up for robot state changes
     [[RKRobotDiscoveryAgent sharedAgent] addNotificationObserver:self selector:@selector(handleRobotStateChangeNotification:)];
     
-    self.detector = [[AFDXDetector alloc] initWithDelegate:self usingCamera:AFDX_CAMERA_FRONT maximumFaces:1];
+    self.detector = [[AFDXDetector alloc] initWithDelegate:self usingCamera:AFDX_CAMERA_FRONT maximumFaces:1 faceMode:LARGE_FACES];
     self.detector.browRaise = YES;
     self.detector.browFurrow = YES;
     [self.detector start];
