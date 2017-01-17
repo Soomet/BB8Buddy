@@ -3,7 +3,7 @@ source 'https://github.com/Affectiva/cocoapods-specs.git'
 use_frameworks!
 
 target 'BB8Buddy' do
-    pod 'AffdexSDK-iOS', '3.2.0-603'
+    pod 'AffdexSDK-iOS', '3.2.0-612'
 end
 
 post_install do |installer|
