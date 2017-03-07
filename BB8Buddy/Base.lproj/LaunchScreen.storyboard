@@ -1,28 +1,71 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J7Q-bu-mhE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="EuD-ki-OUn">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Launch" id="J7Q-bu-mhE" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="sei-Qr-teW"/>
+                        <viewControllerLayoutGuide type="bottom" id="eO8-5S-dfa"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="hQQ-gX-tip">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017 Affectiva. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OQr-n7-zI6" userLabel="Copyright (c) 2017 Affectiva. All rights reserved.">
+                                <rect key="frame" x="36" y="626" width="303" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BB8 Buddy" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="zSk-d3-eqj">
+                                <rect key="frame" x="36" y="165.5" width="303" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Affectiva_Logo_Clear_Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="stv-qF-vlN">
+                                <rect key="frame" x="112.5" y="579.5" width="150" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="stv-qF-vlN" secondAttribute="height" multiplier="1161:219" id="nN9-zb-xvf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="stv-qF-vlN" firstAttribute="width" secondItem="hQQ-gX-tip" secondAttribute="width" multiplier="0.4" id="72n-CR-WPi"/>
+                            <constraint firstItem="eO8-5S-dfa" firstAttribute="top" secondItem="OQr-n7-zI6" secondAttribute="bottom" constant="20" id="8Jh-Gn-R5F"/>
+                            <constraint firstItem="OQr-n7-zI6" firstAttribute="leading" secondItem="hQQ-gX-tip" secondAttribute="leadingMargin" constant="20" id="BiK-bB-Jhd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zSk-d3-eqj" secondAttribute="trailing" constant="20" id="KYq-2E-eO6"/>
+                            <constraint firstItem="stv-qF-vlN" firstAttribute="centerX" secondItem="hQQ-gX-tip" secondAttribute="centerX" id="TXq-bz-VSf"/>
+                            <constraint firstItem="zSk-d3-eqj" firstAttribute="centerY" secondItem="hQQ-gX-tip" secondAttribute="bottom" multiplier="0.3" constant="1" id="awE-5C-BbW"/>
+                            <constraint firstItem="OQr-n7-zI6" firstAttribute="top" secondItem="stv-qF-vlN" secondAttribute="bottom" constant="18" id="d5Q-Pe-Kac"/>
+                            <constraint firstItem="zSk-d3-eqj" firstAttribute="leading" secondItem="hQQ-gX-tip" secondAttribute="leadingMargin" constant="20" id="uC9-7Y-w9g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OQr-n7-zI6" secondAttribute="trailing" constant="20" id="xEc-Z6-NYg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="hQQ-gX-tip" id="5iK-rK-E4Y"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Foc-w0-yhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="191" y="70"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Affectiva_Logo_Clear_Background.png" width="1161" height="219"/>
+    </resources>
 </document>

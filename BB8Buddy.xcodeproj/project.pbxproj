@@ -18,6 +18,7 @@
 		68ADB7231DC8B3A50098DEE2 /* RobotUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */; };
 		68ADB7251DC8B3AD0098DEE2 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */; };
 		7C573C00B931A58FC5610055 /* Pods_BB8Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */; };
+		D91C19C61E6E8B72001F2B88 /* Affectiva_Logo_Clear_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D91C19C51E6E8B72001F2B88 /* Affectiva_Logo_Clear_Background.png */; };
 		D9850DDA1E0468B900AF3491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9850DD91E0468B900AF3491 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = "Sphero-iOS-SDK/frameworks/RobotKit.framework"; sourceTree = "<group>"; };
 		938595D4DC9EE5B7027AD74B /* Pods-BB8Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB8Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BB8Buddy/Pods-BB8Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		CF7BFD41370EC684A254DEBD /* Pods_BB8Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BB8Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91C19C51E6E8B72001F2B88 /* Affectiva_Logo_Clear_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Affectiva_Logo_Clear_Background.png; path = BB8Buddy/Affectiva_Logo_Clear_Background.png; sourceTree = "<group>"; };
 		D9850DD91E0468B900AF3491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BB8Buddy/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 		6841C9EC1BC45561001F21B7 = {
 			isa = PBXGroup;
 			children = (
+				D91C19C51E6E8B72001F2B88 /* Affectiva_Logo_Clear_Background.png */,
 				D9850DD91E0468B900AF3491 /* Images.xcassets */,
 				68ADB7241DC8B3AD0098DEE2 /* RobotKit.framework */,
 				68ADB7221DC8B3A50098DEE2 /* RobotUIKit.framework */,
@@ -202,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91C19C61E6E8B72001F2B88 /* Affectiva_Logo_Clear_Background.png in Resources */,
 				6841CA081BC45561001F21B7 /* LaunchScreen.storyboard in Resources */,
 				682B766A1BC53A6F009D36B8 /* lightside.png in Resources */,
 				6841CA051BC45561001F21B7 /* Assets.xcassets in Resources */,
