@@ -30,7 +30,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BB8 Buddy" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="zSk-d3-eqj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BB8Buddy" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="zSk-d3-eqj">
                                 <rect key="frame" x="36" y="165.5" width="303" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -39,13 +39,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Affectiva_Logo_Clear_Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="stv-qF-vlN">
                                 <rect key="frame" x="112.5" y="579.5" width="150" height="28.5"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DvA-lG-8k5"/>
                                     <constraint firstAttribute="width" secondItem="stv-qF-vlN" secondAttribute="height" multiplier="1161:219" id="nN9-zb-xvf"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="stv-qF-vlN" firstAttribute="width" secondItem="hQQ-gX-tip" secondAttribute="width" multiplier="0.4" id="72n-CR-WPi"/>
                             <constraint firstItem="eO8-5S-dfa" firstAttribute="top" secondItem="OQr-n7-zI6" secondAttribute="bottom" constant="20" id="8Jh-Gn-R5F"/>
                             <constraint firstItem="OQr-n7-zI6" firstAttribute="leading" secondItem="hQQ-gX-tip" secondAttribute="leadingMargin" constant="20" id="BiK-bB-Jhd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zSk-d3-eqj" secondAttribute="trailing" constant="20" id="KYq-2E-eO6"/>
